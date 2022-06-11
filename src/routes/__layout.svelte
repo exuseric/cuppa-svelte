@@ -1,7 +1,7 @@
 <script>
+  import Navigation from '../components/mainNavigation.svelte';
   import '../styles/main.scss';
 </script>
 
-<div class="layout">
-  <slot />
-</div>
+<Navigation />
+<slot />
