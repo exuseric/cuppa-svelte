@@ -1,7 +1,15 @@
-// @use 'config/index' as *;
+@use 'config/index' as *;
 @forward './reset';
 
 body,
 html {
   font-family: $body-family;
+  font-size: 100%;
+}
+
+.copy-container__body {
+  max-width: 65ch;
+}
+.copy-container__heading {
+  max-width: 40ch;
 }
