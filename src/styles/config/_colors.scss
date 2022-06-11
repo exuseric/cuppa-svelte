@@ -1,0 +1,23 @@
+$primary-50: hsl(33, 83%, 90%);
+$primary-500: hsl(33, 83%, 46%);
+
+$neutral-50: hsl(33, 13%, 95%);
+$neutral-500: hsl(33, 13%, 50%);
+$neutral-900: hsl(33, 83%, 10%);
+
+$green-500: #a4d914;
+
+$blue-500: #14bbd9;
+
+$red-500: #d91414;
+$red-50: hsl(0, 83%, 90%);
+
+mark {
+  color: $primary-500;
+  background-color: $primary-50;
+}
+
+body {
+  color: $neutral-900;
+  background-color: $neutral-500;
+}

@@ -1,0 +1,21 @@
+$heading-family: 'Fraunces', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+  'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+$body-family: 'Commissioner', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+  'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+// Typography Scale
+$scale: (
+  'body': 1rem,
+  'body-sm': 0.833rem /* 13.33px; */,
+  'h6': 1.2rem /* 19.20px */,
+  'h5': 1.44rem /* 23.04px	*/,
+  'h4': 1.728rem /* 27.65px */,
+  'h3': 2.074rem /* 33.18px */,
+  'h2': 2.488rem /* 39.81px	*/,
+  'h1': 3.052rem /* 48.83px	*/
+);
+
+@function size($el) {
+  @return map-get($map: $scale, $key: $el);
+}

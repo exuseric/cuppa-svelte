@@ -1,0 +1,7 @@
+// @use 'config/index' as *;
+@forward './reset';
+
+body,
+html {
+  font-family: $body-family;
+}
