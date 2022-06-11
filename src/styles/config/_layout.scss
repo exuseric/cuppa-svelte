@@ -55,7 +55,7 @@
   max-width: f.rem(750);
 
   margin: auto;
-  padding: m.$spacing-sm;
+  padding: 0 m.$spacing-md;
 
   @include screen(medium) {
     max-width: f.rem(950);
