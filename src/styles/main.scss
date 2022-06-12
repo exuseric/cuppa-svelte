@@ -13,3 +13,68 @@ html {
 .copy-container__heading {
   max-width: 40ch;
 }
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+
+  clip: rect(0 0 0 0);
+  clip-path: inset(100%);
+
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+button {
+  font-size: size(h6);
+  font-weight: 600;
+
+  padding: rem(5) rem(20);
+
+  border: 2px solid transparent;
+
+  cursor: pointer;
+}
+
+.icon-btn {
+  display: grid;
+  place-content: center;
+
+  width: rem(40);
+  height: rem(40);
+  padding: 0;
+
+  border: 2px solid transparent;
+
+  cursor: pointer;
+
+  svg {
+    width: auto;
+    height: rem(20);
+  }
+}
+
+.main-btn,
+.outline-btn,
+.main-btn-s,
+.outline-btn-s {
+  display: grid;
+  place-content: center;
+}
+
+.main-btn-s,
+.outline-btn-s {
+  padding: rem(3) rem(10);
+}
+.main-btn,
+.main-btn-s {
+  color: $neutral-50;
+  background-color: $primary-500;
+}
+.outline-btn,
+.outline-btn-s {
+  color: $primary-500;
+  border-color: currentColor;
+  background-color: transparent;
+}
