@@ -1,5 +1,5 @@
 <script>
-  import SearchBar from '../components/search-bar.svelte';
+  import SearchBar from './search-bar.svelte';
 </script>
 
 <header>

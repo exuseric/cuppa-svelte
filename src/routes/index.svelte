@@ -1,5 +1,5 @@
 <script>
-  import Header from '../components/IndexPageHeader.svelte';
+  import Header from '../components/homepage-header.svelte';
 </script>
 
 <svelte:head>
