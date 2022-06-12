@@ -5,7 +5,7 @@
 <header class="nav-bar">
   <div class="wrapper">
     <a href="/" class="logo">
-      <img src="/logo/light.webp" alt="logo" class="logo__img" />
+      <img src="/logo/main.webp" alt="logo" class="logo__img" />
       <span class="logo__txt">Cuppa</span>
     </a>
 
@@ -15,10 +15,10 @@
           <a href="/" aria-disabled="true" class="menu__link">Home</a>
         </li>
         <li>
-          <a href="/recipes" aria-disabled="true" disabled class="menu__link">Recipes</a>
+          <a href="/recipes" class="menu__link">Recipes</a>
         </li>
         <li>
-          <a href="/about" aria-disabled="true" disabled class="menu__link">About</a>
+          <a href="/about" class="menu__link">About</a>
         </li>
       </ul>
     </nav>
@@ -29,26 +29,27 @@
   .nav-bar {
     display: inline-grid;
 
-    position: fixed;
+    position: sticky;
     inset: 0 0 auto;
 
+    width: 100%;
     height: $nav-height;
 
-    background-color: none;
+    background-color: $primary-50;
   }
   .logo {
     @include grid-flow-row;
-    justify-content: center;
+    justify-content: start;
     // gap: $spacing-sm;
 
     text-decoration: none;
+    width: fit-content;
     height: rem(70);
-    aspect-ratio: 1 / 1;
 
     border-radius: rem(10);
 
     &__img {
-      height: rem(40);
+      height: rem(50);
       aspect-ratio: 1 / 1;
 
       object-fit: contain;
@@ -58,7 +59,7 @@
     &__txt {
       font-weight: 600;
 
-      color: $neutral-50;
+      color: $primary-500;
     }
   }
 
@@ -92,7 +93,7 @@
 
   .menu__link {
     font-weight: 600;
-    color: $neutral-50;
+    color: $neutral-900;
     text-decoration: none;
   }
 </style>
