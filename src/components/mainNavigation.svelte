@@ -1,7 +1,3 @@
-<script>
-  import Github from './icons/github.svelte';
-</script>
-
 <header class="nav-bar">
   <div class="wrapper">
     <a href="/" class="logo">
@@ -29,7 +25,7 @@
   .nav-bar {
     display: inline-grid;
 
-    position: sticky;
+    position: fixed;
     inset: 0 0 auto;
 
     width: 100%;
