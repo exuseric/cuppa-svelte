@@ -18,7 +18,7 @@
 
   header {
     height: fit-content;
-    background-color: $primary-50;
+    background-color: $neutral-50;
 
     .grid {
       @include content-grid;

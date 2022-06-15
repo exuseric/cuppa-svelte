@@ -31,7 +31,7 @@
     width: 100%;
     height: $nav-height;
 
-    background-color: $primary-50;
+    background-color: $neutral-50;
   }
   .logo {
     @include grid-flow-row;
