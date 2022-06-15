@@ -1,0 +1,59 @@
+@use './config/colors' as *;
+@use './config/functions' as f;
+@use './config/fonts' as *;
+
+button {
+  font-size: size(h6);
+  font-weight: 600;
+  line-height: 1.125;
+  letter-spacing: f.rem(-1);
+  word-spacing: f.rem(4);
+
+  padding: f.rem(5) f.rem(20);
+
+  border: 2px solid transparent;
+
+  cursor: pointer;
+}
+.icon-btn {
+  display: grid;
+  place-content: center;
+
+  width: f.rem(40);
+  height: f.rem(40);
+
+  padding: 0;
+
+  border: 2px solid transparent;
+
+  cursor: pointer;
+
+  svg {
+    width: auto;
+    // height: f.rem(20);
+  }
+}
+
+.main-btn,
+.outline-btn,
+.main-btn-s,
+.outline-btn-s {
+  display: grid;
+  place-content: center;
+}
+
+.main-btn-s,
+.outline-btn-s {
+  padding: f.rem(3) f.rem(10);
+}
+.main-btn,
+.main-btn-s {
+  color: $neutral-50;
+  background-color: $primary-500;
+}
+.outline-btn,
+.outline-btn-s {
+  color: $primary-500;
+  border-color: currentColor;
+  background-color: transparent;
+}
