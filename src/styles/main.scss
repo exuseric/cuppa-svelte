@@ -1,10 +1,13 @@
 @use 'config/index' as *;
 @forward './reset';
+@forward './buttons';
+@forward './animations';
 
 body,
 html {
   font-family: $body-family;
   font-size: 100%;
+  background-color: $neutral-50;
 }
 
 .copy-container__body {
@@ -26,55 +29,10 @@ html {
   white-space: nowrap;
 }
 
-button {
-  font-size: size(h6);
-  font-weight: 600;
+// STATE STYLES
+.error {
+  color: $red-50;
+  background-color: $red-500;
 
-  padding: rem(5) rem(20);
-
-  border: 2px solid transparent;
-
-  cursor: pointer;
-}
-
-.icon-btn {
-  display: grid;
-  place-content: center;
-
-  width: rem(40);
-  height: rem(40);
-  padding: 0;
-
-  border: 2px solid transparent;
-
-  cursor: pointer;
-
-  svg {
-    width: auto;
-    height: rem(20);
-  }
-}
-
-.main-btn,
-.outline-btn,
-.main-btn-s,
-.outline-btn-s {
-  display: grid;
-  place-content: center;
-}
-
-.main-btn-s,
-.outline-btn-s {
-  padding: rem(3) rem(10);
-}
-.main-btn,
-.main-btn-s {
-  color: $neutral-50;
-  background-color: $primary-500;
-}
-.outline-btn,
-.outline-btn-s {
-  color: $primary-500;
-  border-color: currentColor;
-  background-color: transparent;
+  border-radius: rem(30);
 }
